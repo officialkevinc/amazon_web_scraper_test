@@ -53,7 +53,11 @@ def mail_setup(message):
     server.login(username, the_password)
     server.sendmail(username, 'officialkevinc@hotmail.com', message)
 
-    print("####################################\n#\n#\n#        EMAIL HAS BEEN SENT\n#\n#\n####################################")
+    print("####################################")
+    print("#                                  #")
+    print("#       EMAIL HAS BEEN SENT        #")
+    print("#                                  #")
+    print("####################################")
     server.quit()
 
 run_program()
