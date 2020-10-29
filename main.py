@@ -25,6 +25,8 @@ def run_program():
 4.- Quit
         """)
         option = input("> ")
+        if option == "1":
+            login()
         if option == "3":
             print("Getting information about the products...")
             get_products()
@@ -34,9 +36,10 @@ def run_program():
         if option == "4":
             break
 
-
 def login():
-
+    username = open("users.txt", "r")
+    print(username)
+    username.close()
 
 def get_products():
     global email_message
