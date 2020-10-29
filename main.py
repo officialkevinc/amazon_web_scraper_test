@@ -37,7 +37,7 @@ def run_program():
             break
 
 def login():
-    username = open("users.txt", "r")
+    username = open("passwords.txt", "r")
     print(username)
     username.close()
 
